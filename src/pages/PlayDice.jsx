@@ -108,7 +108,7 @@ const PlayDice = ({ diceGameContract, account }) => {
 
         // I added special messages for the unique dice outcomes (0=reset, 37=double, 38=halve).
         let resultMsg = `You rolled a ${diceResult}.`;
-        if (diceResult === 0) resultMsg = "💀 Rolled 0 — nothing added!";
+        if (diceResult === 0) resultMsg = "💀 Rolled 0! Better luck next time!";
         else if (diceResult === 37) resultMsg = "🔥 Score DOUBLED!";
         else if (diceResult === 38) resultMsg = "💀 Score HALVED!";
 
