@@ -1,0 +1,31 @@
+/* I changed the font imports to Orbitron and Space Grotesk as they suit the blockchain/techy vibe better */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  /* I changed the font to Space Grotesk for body text */
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/* Headings now use Orbitron */
+h1, h2, h3, h4 {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 0.05em;
+}
+
+/* Custom global styles */
+body {
+  /* I replaced the SVG background with a purple gradient to give the app a cleaner premium feel */
+  background-color: #1a0a2e;
+  background-image: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 50%, #0d0515 100%);
+  color: white;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  object-fit: fill;
+  /* background-position: center; */
+}
